@@ -182,7 +182,7 @@ Username: aman
 
 Password: aman1234
 
-if you are getting error while admin because of database npt sync by any reason then 
+if you are getting error while admin because of database not sync by any reason then 
 
 docker-compose up -d     be in main url 
 
