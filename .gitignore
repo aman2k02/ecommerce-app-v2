@@ -1,0 +1,45 @@
+# === Python / Django ===
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.sqlite3
+db.sqlite3
+.env
+
+# Django static/media folders (if you generate them)
+staticfiles/
+media/
+
+# VS Code / PyCharm
+.vscode/
+.idea/
+
+# === Node / React ===
+node_modules/
+build/
+dist/
+
+# npm / yarn logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency lock files you don't want to overwrite unintentionally
+# If you use yarn, you can keep yarn.lock; otherwise remove one
+package-lock.json
+# yarn.lock
+
+# === System Files ===
+.DS_Store
+Thumbs.db
+
+# === Coverage reports ===
+coverage/
+htmlcov/
+
+# === Docker ===
+*.pid
+
+# === Misc ===
+*.log
