@@ -196,6 +196,7 @@ cd ecommerce-app-v2
 
 ✅ Build & Run with Docker: Check again docker is showing running in left 
 
+docker-compose up -d
 
 docker-compose up --build
 
