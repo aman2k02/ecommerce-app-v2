@@ -182,13 +182,7 @@ Username: aman
 
 Password: aman1234
 
-if you are getting error while admin because of database not sync by any reason then 
 
-docker-compose up -d     be in main url 
-
-Create a superuser inside Docker:
-
-docker-compose exec backend python manage.py createsuperuser
 
 🐳 Docker Setup
 
@@ -206,43 +200,16 @@ cd ecommerce-app-v2
 
 docker-compose up --build
 
-if you are getting error after this like 
-{
-return self.cursor.execute(sql, params)
-backend-1   |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-backend-1   |   File "/usr/local/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 360, in execute
-backend-1   |     return super().execute(query, params)
-}
-then 
-
-What you should do next:
-
-From your project root (where docker-compose.yml is), run:
-
-Then check again with:
-
-docker ps
-
-You should now see your backend container listed, something like:
-
-
-CONTAINER ID   IMAGE                      COMMAND                  ...   NAMES
-abc12345def6   yourproject_backend        "gunicorn ecommerce..."  ...   yourproject_backend_1
-
-Now you can safely run migrations:
-
-docker-compose exec backend python manage.py makemigrations
-
-docker-compose exec backend python manage.py migrate
-
-docker-compose up -d
-
 
 Access the app:
 
 Frontend: http://localhost:3000
 
 Backend API: http://localhost:8000
+
+Username: aman
+
+Password: aman1234
 
 📬 API Testing
 
