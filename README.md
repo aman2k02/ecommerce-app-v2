@@ -88,7 +88,7 @@ cd ecommerce-app-v2
 🔹 a) Go to Backend:
 
 
-cd ecommerce_backend
+cd backend\ecommerce_backend
 
 ✅ Note: Folder name is ecommerce_backend (not just backend).
 
